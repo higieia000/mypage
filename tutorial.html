@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capston Turorial Web-page</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tutorial.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="tutorial.js"></script>
+
+    
+</head>
+<body>
+    
+    <div id="containert">
+
+        <header id="header">
+            <h1>불법 현수막 위치 등록 사이트</h1>
+        </header>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="tutorial.html">메인화면</a></li>
+                <li><a href="location.html">위치표시</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+        </nav>
+        
+        <div id="wrap">
+
+            <aside id = sidebar>
+                <ul>
+                    <li><a href="tutorial.html">메인화면</a></li>
+                    <li><a href="location.html">위치표시</a></li>
+                </ul>
+            </aside>
+
+            <article id="content">
+                <gmp-map id="map" center="35.139585083191,126.92324393495" zoom="15" map-id="DEMO_MAP_ID">
+                    <gmp-advanced-marker
+                        position="35.139585083191,126.92324393495"
+                        title="Chosun University"
+                    ></gmp-advanced-marker>
+
+                    <gmp-advanced-marker
+                        position="35.139585083191,126.92324393495"
+                        title="Chosun University"
+                    ></gmp-advanced-marker>
+
+
+                </gmp-map>
+
+                
+
+                
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=marker&v=beta"
+                    defer
+                ></script>
+            </article>
+
+        </div>
+
+        <footer id="footer">
+            &copy; 2024 chosun university graduate assignment
+        </footer>
+
+    </div>
+
+</body>
+</html>
